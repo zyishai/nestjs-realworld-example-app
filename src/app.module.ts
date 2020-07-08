@@ -17,7 +17,7 @@ import {TagModule} from './tag/tag.module';
       port: 3306,
       username: process.env.DB_USERNAME,
       password: process.env.DB_PASSWORD,
-      database: 'nestjsrealworld',
+      database: process.env.DB_NAME,
       entities: ['src/**/**.entity{.ts,.js}'],
       synchronize: true,
     }),
